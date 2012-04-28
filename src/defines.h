@@ -2,7 +2,8 @@
 #include "buffer.h"
 
 enum Error {
-	OK
+	OK,
+	LOAD_INPUT_FILE_FAILS
 };
 
 struct result{

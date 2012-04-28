@@ -1,11 +1,11 @@
 #pragma once
 
-enum BufferError{
+enum BufferError {
 	BUFFER_OK,
 	BUFFER_LOAD_FAIL
 };
 
-struct buffer{
+struct buffer {
 	size_t length;
 	char *data;
 };
