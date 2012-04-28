@@ -7,10 +7,10 @@ enum Error {
 
 struct result{
 	size_t ref_start;
-	size_t ref_end
+	size_t ref_end;
 	size_t in_start;
-	size_t in_end
-}
+	size_t in_end;
+};
 
 enum Error Compare(
 	struct buffer *ref_buffer,

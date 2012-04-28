@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include "defines.h"
 
 int main(int argc, char *argv[]) {
@@ -22,9 +22,9 @@ struct buffer in_buffer;
 	in_files_array = &argv[4];
 	in_files_count = argc - 4;
 
-	Buffer_LoadFromFile(ref_buffer, reference_file);
+	Buffer_MapFile(&ref_buffer, reference_file);
 
-	Buffer_Free(ref_buffer);
+	Buffer_Free(&ref_buffer);
 	return (int)ret_code;
 }
 

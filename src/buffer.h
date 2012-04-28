@@ -6,11 +6,11 @@ enum BufferError{
 };
 
 struct buffer{
-	size_t length
-	char *data,
+	size_t length;
+	char *data;
 };
 
-enum BufferError Buffer_LoadFromFile(struct buffer *buffer, char *filename);
+enum BufferError Buffer_MapFile(struct buffer *buffer, char *filename);
 
 void Buffer_Free(struct buffer *buffer);
 
